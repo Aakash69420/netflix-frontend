@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import './watch.scss'
-import { ArrowBackOutlined } from "@material-ui/icons"
+import { ArrowBackOutlined } from "@mui/icons-material"
 import { useLocation, Link } from 'react-router-dom'
 
 export default function Watch() {

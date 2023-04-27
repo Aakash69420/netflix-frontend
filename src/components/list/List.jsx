@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import "./list.scss"
-import { ArrowBackIosOutlined, ArrowForwardIosOutlined } from '@material-ui/icons'
+import { ArrowBackIosOutlined, ArrowForwardIosOutlined } from '@mui/icons-material'
 import ListItem from "../listItem/ListItem"
 
 export default function List({list}) {
