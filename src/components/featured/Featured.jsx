@@ -3,7 +3,7 @@ import './featured.scss'
 import { InfoOutlined, PlayArrow } from '@mui/icons-material'
 import axios from 'axios'
 
-export default function Featured({ type }) {
+export default function Featured({ type, setGenre }) {
   const [content, setContent] = useState({})
 
   useEffect(() => {
@@ -30,7 +30,7 @@ export default function Featured({ type }) {
       {type && (
         <div className='category'>
           <span>{type === 'movies' ? 'movies' : 'series'}</span>
-          <select name='genre' id='genre'>
+          <select name='genre' id='genre' onChange={(e) => setGenre(e.target.value)}>
             <option>Genre</option>
             <option value='adventure'>Adventure</option>
             <option value='comedy'>Comedy</option>
@@ -41,7 +41,7 @@ export default function Featured({ type }) {
             <option value='romance'>Romance</option>
             <option value='sci-fi'>Sci-fi</option>
             <option value='thriller'>Thriller</option>
-            <option value='western'>Western</option>
+            <option value='action'>Action</option>
             <option value='animation'>Animation</option>
             <option value='drama'>Drama</option>
             <option value='documentary'>Documentary</option>
