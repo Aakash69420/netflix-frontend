@@ -44,5 +44,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://netflix-admin-37dj.vercel.app/api/"
+  "proxy": "https://netflix-backend-fim6.onrender.com/api/"
 }
