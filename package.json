@@ -44,5 +44,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://localhost:8800/api/"
+  "proxy": "https://netflix-backend-fim6.onrender.com/api/"
 }
