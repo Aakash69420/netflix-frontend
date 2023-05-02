@@ -14,7 +14,7 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault()
     try {
-      const res = await axios.post("auth/login", { email, password })
+      const res = await axios.post("https://netflix-backend-fim6.onrender.com/api/auth/login", { email, password })
       dispatch({ type: 'LOGIN_SUCCESS', payload: res.data })
     } catch (err) {
       setErrorMessage("Wrong email or password. Please try again.")
