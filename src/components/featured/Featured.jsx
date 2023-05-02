@@ -11,7 +11,7 @@ export default function Featured({ type, setGenre }) {
       try {
       
         console.log("type",type);
-        const res = await axios.get(`/movies/random?type=${type}`, {
+        const res = await axios.get(`https://netflix-backend-fim6.onrender.com/api/movies/random?type=${type}`, {
           headers: {
             token: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzkyMmIzY2E2NjVlMDExODZjOGExMiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MjY5MzA2NCwiZXhwIjoxNjgzMTI1MDY0fQ.o4NqyrZDuN5F5dYtRFEUpZHKNcwM06fcSCBsjyIOr6o',
           },

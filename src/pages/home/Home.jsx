@@ -12,7 +12,7 @@ const Home = ({type}) => {
   useEffect(() => {
     const getRandomLists = async () => {
       try{
-        const res = await axios.get(`lists${type ? "?type=" + type : ""}${genre ? "&genre=" + genre : ""}`,{
+        const res = await axios.get(`https://netflix-backend-fim6.onrender.com/api/lists${type ? "?type=" + type : ""}${genre ? "&genre=" + genre : ""}`,{
           headers: {
             token: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzkyMmIzY2E2NjVlMDExODZjOGExMiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MjY5MzA2NCwiZXhwIjoxNjgzMTI1MDY0fQ.o4NqyrZDuN5F5dYtRFEUpZHKNcwM06fcSCBsjyIOr6o"
           }
